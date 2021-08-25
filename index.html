@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Robot-Arm-Control-Panel</title>
+    <link rel="stylesheet" href ="Style.CSS">
+</head>
+  <body>
+
+     <form action="Submit.php" method="POST">
+        <div class="box">
+  
+          <h2> Control Panel </h2>
+
+  <div class="box">
+    <div class="main">
+	    <p>Degree:<span id="output1"></span></p>
+        <input type="range" min="0" max="180" value="90" class="slider" name="Hand" id="slider1">
+        <div class="caption"> Hand </div>      
+    </div>
+ 
+    <script>
+    var slider1 = document.getElementById("slider1");
+    var output1 = document.getElementById("output1");
+    output1.innerHTML = slider1.value;
+
+    slider1.oninput = function() {
+    output1.innerHTML = this.value;
+}
+    </script>
+
+    <div class="main">
+        <p>Degree:<span id="output2"></span></p>
+        <input type="range" min="0" max="180" value="90" class="slider" name="Wrist" id="slider2">
+        <div class="caption"> Wrist </div>      
+    </div>
+
+    <script>
+    var slider2 = document.getElementById("slider2");
+    var output2 = document.getElementById("output2");
+    output2.innerHTML = slider2.value;
+
+    slider2.oninput = function() {
+    output2.innerHTML = this.value;
+}
+</script>
+    <div class="main">
+        <p>Degree:<span id="output3"></span></p>
+        <input type="range" min="0" max="180" value="90" class="slider" name="Elbow" id="slider3">
+        <div class="caption"> Elbow </div>      
+    </div>
+	
+    <script>
+    var slider3 = document.getElementById("slider3");
+    var output3 = document.getElementById("output3");
+    output3.innerHTML = slider3.value;
+
+    slider3.oninput = function() {
+    output3.innerHTML = this.value;
+}
+    </script>
+
+    <div class="main">
+        <p>Degree:<span id="output4"></span></p>
+        <input type="range" min="0" max="180" value="90" class="slider" name="Shoulder" id="slider4">
+        <div class="caption"> Shoulder </div>      
+    </div>
+	
+    <script>
+    var slider4 = document.getElementById("slider4");
+    var output4 = document.getElementById("output4");
+    output4.innerHTML = slider4.value;
+
+    slider4.oninput = function() {
+    output4.innerHTML = this.value;
+}
+    </script>
+    <div class="main">
+        <p>Degree:<span id="output5"></span></p>
+        <input type="range" min="0" max="180" value="90" class="slider" name="Waist" id="slider5">
+        <div class="caption"> Waist </div>      
+    </div>
+	
+    <script>
+    var slider5 = document.getElementById("slider5");
+    var output5 = document.getElementById("output5");
+    output5.innerHTML = slider5.value;
+
+    slider5.oninput = function() {
+    output5.innerHTML = this.value;
+}
+    </script>
+
+    <div class="main">
+        <p>Degree:<span id="output6"></span></p>
+        <input type="range" min="0" max="180" value="90" class="slider" name="Base" id="slider6">
+        <div class="caption"> Base </div>      
+    </div>
+	
+    <script>
+    var slider6 = document.getElementById("slider6");
+    var output6 = document.getElementById("output6");
+    output6.innerHTML = slider6.value;
+
+    slider6.oninput = function() {
+    output6.innerHTML = this.value;
+}
+    </script>
+
+  <input type="submit" id="btn1" class= "button" value="Save"></input>
+  </button>
+  
+   <input type="submit" id="btn2" class="button" value=" Run"></input>
+  </button>
+ 
+       </div>
+     
+	</form>
+	 
+  </body>
+   
+</html>
